@@ -1,4 +1,5 @@
+port: 2600
+destination: _deploy
 name: Brian Zelip on GitHub
 markdown: redcarpet
 pygments: true
-destination: _deploy
