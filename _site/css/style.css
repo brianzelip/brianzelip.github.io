@@ -935,5 +935,6 @@ main a:active {text-decoration: none;}
 
 main img {
   max-width: 100%;
-  border: .2rem solid #fff;
+  border: .2rem solid #ecf0f1;
+  border-radius: .25rem;
 }
