@@ -36,10 +36,22 @@ body {
   }
 }
 
+main {
+  margin-bottom: 2rem;
+}
+
 p {
   margin: 0 0 1rem 0;
 }
 
 p:last-child {
   margin-bottom: 0;
+}
+
+a {
+  -webkit-transition: 250ms ease-in-out;
+     -moz-transition: 250ms ease-in-out;
+       -o-transition: 250ms ease-in-out;
+      -ms-transition: 250ms ease-in-out;
+          transition: 250ms ease-in-out;
 }

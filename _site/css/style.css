@@ -698,12 +698,24 @@ body {
   }
 }
 
+main {
+  margin-bottom: 2rem;
+}
+
 p {
   margin: 0 0 1rem 0;
 }
 
 p:last-child {
   margin-bottom: 0;
+}
+
+a {
+  -webkit-transition: 250ms ease-in-out;
+     -moz-transition: 250ms ease-in-out;
+       -o-transition: 250ms ease-in-out;
+      -ms-transition: 250ms ease-in-out;
+          transition: 250ms ease-in-out;
 }
 
 /* Grid
@@ -864,9 +876,12 @@ header {
 
 .nav li {
   display: inline-block;
-  padding: 0 1rem 0 1rem;
+  padding: 0 .85rem 0 .85rem;
   line-height: 1;
   font-size: 1.3rem;
+}
+@media (min-width: 55em) {
+  .nav li {padding: 0 1rem 0 1rem;}
 }
 @media (min-width: 45em) {
   .nav li:first-child {
@@ -882,14 +897,14 @@ header {
   font-weight: 700;
 }
 
-.nav li a.about:hover,
-.nav li a.about.current {box-shadow: 0 2px #f1c40f;}
-
-@media (min-width: 53em) {
+@media (min-width: 53em) {  
   .nav li a.about::after {
     content: "/contact";
   }
 }
+
+.nav li a.about:hover,
+.nav li a.about.current {box-shadow: 0 2px #f1c40f;}
 
 .nav li a.works:hover,
 .nav li a.works.current {box-shadow: 0 2px #e74c3c;}
@@ -900,3 +915,25 @@ header {
 .nav li a.writing:hover,
 .nav li a.writing.current {box-shadow: 0 2px #2ecc71;}
 
+
+/* Posts */
+main a {
+  text-decoration: none;
+  color: #f60;
+}
+
+main a:hover {color: #ecf0f1;}
+
+main a:active {text-decoration: none;}
+
+.single-post h1 {
+  display: inline-block;
+  margin-top: 0;
+  box-shadow: 0 1px #2ecc71;
+  line-height: 1;
+}
+
+main img {
+  max-width: 100%;
+  border: .2rem solid #fff;
+}
