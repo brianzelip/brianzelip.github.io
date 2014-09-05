@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/instagram-feed.css">
+    <title>Instagram feed sandbox</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header>
+        <h1>Instagram Feed</h1>
+        <p>These are the last 16 pics I've posted to Instagram.</p>
+      </header>
+
+      <section class="instagram-set-wrapper">
+        <div class="row clearfix">
+          <div class="column one-third">
+            <img src="http://ift.tt/VInNpE">
+          </div>
+          <div class="column one-third">
+            <img src="http://photos-a.ak.instagram.com/hphotos-ak-prn/929154_288755574641000_400932082_n.jpg">
+          </div>
+          <div class="column one-third">
+            <img src="http://photos-e.ak.instagram.com/hphotos-ak-xfa1/10584593_314686612037652_1931953376_n.jpg">
+          </div>
+        </div>
+        
+      </section>
+
+    </div>
+
+    <script src="js/tabletop.js"></script>
+    <script>
+      window.onload = function() { init() };
+
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1WfHoeV-iAxtXdAQEIdL672BNciEau6OYXBE-L5ufhks/pubhtml';
+
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } )
+      }
+
+      function showInfo(data, tabletop) {
+        alert("Successfully processed!")
+        console.log(data);
+      }
+    </script>
+
+  </body>
+
+</html>
