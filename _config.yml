@@ -3,7 +3,9 @@ title: Brian Zelip
 email: bzelip@gmail.com
 description: "Brian Zelip is interested in [presenting, curating, understanding] data."
 baseurl: ""
-url: "http://brianzelip.github.io/personal"
+url: "http://brianzelip.github.io/"
+sass:
+  sass_dir: _sass
 
 # Build settings
 markdown: kramdown

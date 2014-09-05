@@ -1,12 +1,11 @@
 ---
-layout: nil
 ---
 @charset "UTF-8";
 
 /***************************************************
  *                                                 *
- *  Site name:  Ben Cohen                          *
- *  Site URI:   http://brianzelip.github.io/cohen  *
+ *  Site name:  Brian Zelip                        *
+ *  Site URI:   http://brianzelip.github.io/       *
  *  Author:     Brian Zelip                        *
  *  Author URI: http://zelip.me                    *
  *                                                 *
@@ -22,12 +21,27 @@ layout: nil
 
 */
 
-{% include normalize.bz.css %}
+/*
+ * 01. Normalize
+ */
+@import "normalize.bz.scss";
 
-{% include fonts.css %}
+/*
+ * 02. Fonts
+ */
+@import "fonts.scss";
 
-{% include scaffolding.css %}
+/*
+ * 03. Scaffolding
+ */
+@import "scaffolding.scss";
 
-{% include grid.bz.css %}
+/*
+ * 04. Grid
+ */
+@import "grid.bz.scss";
 
-{% include sections-bower.css %}
+/*
+ * 05. Sections
+ */
+@import "sections.scss";
