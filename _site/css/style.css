@@ -16,9 +16,6 @@
     05. Sections
 
 */
-/*
- * 01. Normalize
- */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -388,9 +385,6 @@ th {
   padding: 0; }
 
 /* /normalize.css v3.0.1 */
-/*
- * 02. Fonts
- */
 @font-face {
   font-family: 'Source Serif Pro';
   font-weight: 400;
@@ -481,9 +475,6 @@ th {
   font-style: italic;
   font-stretch: normal;
   src: local("SourceSansPro-BlackIt"), local("Source Sans Pro"), url("../fonts/EOT/SourceSansPro-BlackIt.eot") format("embedded-opentype"), url("../fonts/WOFF/OTF/SourceSansPro-BlackIt.otf.woff") format("woff"), url("../fonts/OTF/SourceSansPro-BlackIt.otf") format("opentype"), url("../fonts/TTF/SourceSansPro-BlackIt.ttf") format("truetype"); }
-/*
- * 03. Scaffolding
- */
 /* Scaffolding and type
    ========================================================================== */
 html {
@@ -522,15 +513,20 @@ p:last-child {
   margin-bottom: 0; }
 
 a {
+  text-decoration: none;
+  color: #f60;
   -webkit-transition: 150ms ease-in-out;
   -moz-transition: 150ms ease-in-out;
   -ms-transition: 150ms ease-in-out;
   -o-transition: 150ms ease-in-out;
   transition: 150ms ease-in-out; }
 
-/*
- * 04. Grid
- */
+a:hover {
+  color: #ecf0f1; }
+
+a:active {
+  text-decoration: none; }
+
 /* Grid
    ========================================================================== */
 .column {
@@ -573,7 +569,23 @@ a {
     width: 40%; }
 
   .column.one-fifth {
-    width: 20%; } }
+    width: 20%; }
+
+  /* ninths */
+  .column.eight-ninths {
+    width: 88.88%; }
+
+  .column.seven-ninths {
+    width: 77.77%; }
+
+  .column.five-ninths {
+    width: 55.55%; }
+
+  .column.four-ninths {
+    width: 44.44%; }
+
+  .column.two-ninths {
+    width: 22.22%; } }
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -593,9 +605,6 @@ a {
   float: none;
   margin: 0 auto; }
 
-/*
- * 05. Sections
- */
 /* Sections
    ========================================================================== */
 /* Header */
@@ -719,16 +728,6 @@ header {
   box-shadow: 0 2px #2ecc71; }
 
 /* Posts */
-main a {
-  text-decoration: none;
-  color: #f60; }
-
-main a:hover {
-  color: #ecf0f1; }
-
-main a:active {
-  text-decoration: none; }
-
 .single-post h1 {
   display: inline-block;
   margin-top: 0;
