@@ -485,7 +485,7 @@ html {
 body {
   height: 100vh;
   margin: 0;
-  font: 1rem/1.5 'Source Serif Pro';
+  font: 1rem/1.5 'Source Sans Pro';
   color: #ecf0f1;
   background-color: #34495e;
   text-rendering: optimizelegibility; }
@@ -495,8 +495,8 @@ body {
   font-smoothing: antialiased; }
 
 .container {
-  padding-left: 2rem;
-  padding-right: 2rem; }
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
 
 @media (min-width: 45em) {
   .container {
