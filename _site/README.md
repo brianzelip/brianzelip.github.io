@@ -1,3 +1,2 @@
-# brianzelip.github.io
 
-personal site w/ custom url. new design fall 2014.
+evolve from [people.lis.illinois.edu/~bzelip](http://people.lis.illinois.edu/~bzelip)
