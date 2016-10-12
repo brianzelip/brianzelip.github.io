@@ -9,5 +9,3 @@ url: "http://brianzelip.github.io/"
 markdown: kramdown
 permalink: pretty
 exclude: [css/preprefix]
-gems:
-  - octopress-autoprefixer
