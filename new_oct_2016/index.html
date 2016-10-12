@@ -25,11 +25,12 @@
       }
       .vh100 { min-height: 100vh; }
       .justify-center { justify-content: center; }
+      .justify-around { justify-content: space-around; }
       .align-center { align-items: center; }
       .dusty-blue { color: #34495e; }
       .bg-dusty-blue { background-color: #34495e; }
       @media (min-width: 52em) {
-        .md-mt10 { margin-top: 10rem; }
+        .md-mt8 { margin-top: 6rem; }
       }
       .h0 { font-size: 5rem; }
       .btn:hover { text-decoration: underline; }
@@ -38,23 +39,26 @@
         margin-left: auto;
         margin-right: auto;
       }
+      a { color: #e74c3c; }
     </style>
   </head>
 
   <body class="bg-dusty-blue px2">
 
-    <header class="mt4 md-mt10">
+    <header class="mt4 md-mt8">
       <div class="narrow-container">
-        <div class="flex align-center">
-          <img src="http://placehold.it/250x250" class="circle">
-          <div class="ml3">
-            <h1 class="m0 h0 white">Brian Zelip</h1>
-            <p class="m0 p0 white h1">web &middot; data &middot; teaching</p>
-            <div class="flex mxn2 mt2">
-              <a href="" class="btn h3 white">Email</a>
-              <a href="" class="btn h3 white">Twitter</a>
-              <a href="" class="btn h3 white">LinkedIn</a>
-              <a href="" class="btn h3 white">GitHub</a>
+        <div class="mx-auto">
+          <div class="flex align-center justify-around">
+            <img src="http://placehold.it/250x250" class="circle">
+            <div class="">
+              <h1 class="m0 h0 white">Brian Zelip</h1>
+              <p class="m0 p0 white h1">web &middot; data &middot; teaching</p>
+              <div class="flex mxn2 mt2">
+                <a href="" class="btn h3 white">Email</a>
+                <a href="" class="btn h3 white">Twitter</a>
+                <a href="" class="btn h3 white">LinkedIn</a>
+                <a href="" class="btn h3 white">GitHub</a>
+              </div>
             </div>
           </div>
         </div>
@@ -62,8 +66,8 @@
     </header>
 
     <section class="mt4 narrow-container white">
-      <p>I am the Emerging Technologies Librarian at the University of Maryland, Baltimore where I manage the <a href="http://www.hshsl.umaryland.edu/services/ispace">Innovation Space</a> and give workshops and talks on topics that include [open science, ]open source tools, web development, and 3D printing. data management, web development, and 3D printing.</p>
-      <p>Previously I worked with the <a href="http://library.illinois.edu/sc">Scholarly Commons</a> and the <a href="http://cdi.lis.illinois.edu/">Center for Digital Inclusion</a>.</p>
+      <p class="h2">I am the Emerging Technologies Librarian at the <a href="http://www.hshsl.umaryland.edu">University of Maryland, Baltimore</a>. I run the <a href="http://www.hshsl.umaryland.edu/services/ispace">Innovation Space</a> and give workshops and talks on topics that include open source tools, creating for the web, and 3D printing.</p>
+      <p class="h2">Previously I worked with the <a href="http://library.illinois.edu/sc">Scholarly Commons</a>, the <a href="http://cdi.lis.illinois.edu/">Center for Digital Inclusion</a>, and <a href="http://www.toledogarden.org/toledogrows/">Toledo GROWs</a>.</p>
     </section>
 
   </body>
