@@ -30,10 +30,23 @@
       .align-center { align-items: center; }
       .dusty-blue { color: #34495e; }
       .bg-dusty-blue { background-color: #34495e; }
-      @media (min-width: 52em) {
-        .md-mt8 { margin-top: 6rem; }
+      .h0 { font-size: 3rem; }
+      @media (min-width:40em) {
+        .sm-mt8 { margin-top: 8rem; }
+        .sm-mt4 { margin-top: 4rem; }
+        .sm-mt3r { margin-top: 3rem; }
+        .sm-200px { width: 200px; }
+        .h0 { font-size: 4.75rem; }
       }
-      .h0 { font-size: 5rem; }
+      @media (min-width: 52em) {
+        .md-mt4 { margin-top: 4rem; }
+        .md-mt5 { margin-top: 5rem; }
+        .md-mt6 { margin-top: 6rem; }
+        .md-mt8 { margin-top: 8rem; }
+        .md-250px { width: 250px; }
+        .h0 { font-size: 5rem; }
+      }
+      .mt3r { margin-top: 3rem; }
       /*.btn:hover { text-decoration: underline; }*/
       .btn:hover { box-shadow: 0 2px #f1c40f; }
       .green-underline:hover { box-shadow: 0 2px #1DC355; }
@@ -49,11 +62,11 @@
     </style>
   </head>
 
-  <body class="bg-dusty-blue px2">
+  <body class="bg-dusty-blue px3">
 
-    <header class="mt4 md-mt8 narrow-container">
+    <header class="sm-mt4 md-mt5 narrow-container">
       <div class="flex align-center justify-center">
-        <img src="img/bz.jpg" class="circle px1" width="250">
+        <img src="img/bz.jpg" class="circle px1 sm-200px md-250px">
         <div class="px1">
           <h1 class="m0 h0 lh-1 white">Brian Zelip</h1>
           <p class="m0 p0 white h1 lh-1">web &middot; data &middot; teaching</p>
@@ -67,9 +80,11 @@
       </div>
     </header>
 
-    <section class="mt4 narrow-container white">
-      <p class="h3 fw-200">I'm the Emerging Technologies Librarian at the <a href="http://www.hshsl.umaryland.edu">University of Maryland, Baltimore</a>. I run the <a href="http://www.hshsl.umaryland.edu/services/ispace">Innovation Space</a>, and give workshops and talks on topics related to open source tools, creating for the web, and 3D printing.</p>
-      <p class="h3 m0 fw-200">Prior to moving to Baltimore I worked with the University of Illinois' <a href="http://library.illinois.edu/sc">Scholarly Commons</a> and <a href="http://ischool.illinois.edu/">School for Information Sciences</a>, and <a href="http://www.toledogarden.org/toledogrows/">Toledo GROWs</a>.</p>
+    <section class="sm-mt3r md-mt4 narrow-container white">
+      <div class="flex flex-column">
+        <p class="h3 p1 m0 fw-200">I'm the Emerging Technologies Librarian at the <a href="http://www.hshsl.umaryland.edu">University of Maryland, Baltimore</a>. I run the <a href="http://www.hshsl.umaryland.edu/services/ispace">Innovation Space</a>, and give workshops and talks on topics related to open source tools, creating for the web, and 3D printing.</p>
+        <p class="h3 p1 m0 fw-200">Prior to Baltimore I worked with the University of Illinois' <a href="http://library.illinois.edu/sc">Scholarly Commons</a> and <a href="http://ischool.illinois.edu/">School for Information Sciences</a>, and <a href="http://www.toledogarden.org/toledogrows/">Toledo GROWs</a>.</p>
+      </div>
     </section>
 
   </body>
