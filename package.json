@@ -1,0 +1,22 @@
+{
+  "name": "brianzelip.github.io",
+  "version": "0.2.0",
+  "description": "Temporary personal profile page for Brian Zelip",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianzelip/brianzelip.github.io.git"
+  },
+  "keywords": [
+    "profile"
+  ],
+  "author": "@bzelip",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/brianzelip/brianzelip.github.io/issues"
+  },
+  "homepage": "https://github.com/brianzelip/brianzelip.github.io#readme"
+}
