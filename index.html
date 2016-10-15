@@ -25,19 +25,36 @@
       }
       .serif { font-family: Athelas, Georgia, serif; }
       .vh100 { min-height: 100vh; }
+
       .justify-center { justify-content: center; }
       .justify-around { justify-content: space-around; }
       .justify-between { justify-content: space-between; }
       .align-center { align-items: center; }
+      @media (min-width: 40em) {
+        .sm-align-center { align-items: center; }
+        .sm-flex-row { flex-direction: row; }
+      }
+
+
       .dusty-blue { color: #34495e; }
       .bg-dusty-blue { background-color: #34495e; }
       .h0 { font-size: 3rem; }
       @media (min-width:40em) {
+        .sm-py0 {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        .sm-px0 {
+          padding-right: 0;
+          padding-left: 0;
+        }
         .sm-mt8 { margin-top: 8rem; }
         .sm-mt4 { margin-top: 4rem; }
+        .sm-mt3 { margin-top: 2rem; }
         .sm-mt3r { margin-top: 3rem; }
         .sm-200px { width: 200px; }
         .h0 { font-size: 4.75rem; }
+        .sm-left-align { text-align: left; }
       }
       @media (min-width: 52em) {
         .md-mt4 { margin-top: 4rem; }
@@ -67,22 +84,22 @@
   <body class="bg-dusty-blue px3">
 
     <header class="sm-mt4 md-mt5 narrow-container">
-      <div class="flex align-center">
-        <img src="img/avatar2.jpg" class="circle px1 sm-200px md-250px">
-        <div class="px1">
+      <div class="flex flex-column align-center sm-flex-row">
+        <img src="img/bz.jpg" class="circle py2 sm-py0 px1 col-4 sm-200px md-250px">
+        <div class="px1 center sm-left-align">
           <h1 class="m0 h0 lh-1 white">Brian Zelip</h1>
           <p class="m0 p0 white h1 lh-1">web &middot; data &middot; teaching</p>
-          <nav class="flex justify-between mt3">
-            <a href="mailto:brian.zelip@gmail.com" class="h2 white green-underline text-decoration-none lh-1">Email</a>
-            <a href="https://twitter.com/bzelip" class="h2 white green-underline text-decoration-none lh-1">Twitter</a>
-            <a href="https://github.com/brianzelip" class="h2 white green-underline text-decoration-none lh-1">GitHub</a>
-            <a href="https://www.linkedin.com/in/zelip" class="h2 white green-underline text-decoration-none lh-1">LinkedIn</a>
+          <nav class="flex justify-between mt2 sm-mt3">
+            <a href="mailto:brian.zelip@gmail.com" class="h2 white px2 sm-px0 green-underline text-decoration-none lh-1">Email</a>
+            <a href="https://twitter.com/bzelip" class="h2 white px2 sm-px0 green-underline text-decoration-none lh-1">Twitter</a>
+            <a href="https://github.com/brianzelip" class="h2 white px2 sm-px0 green-underline text-decoration-none lh-1">GitHub</a>
+            <a href="https://www.linkedin.com/in/zelip" class="h2 white px2 sm-px0 green-underline text-decoration-none lh-1">LinkedIn</a>
           </nav>
         </div>
       </div>
     </header>
 
-    <section class="sm-mt3r md-mt4 narrow-container white">
+    <section class="mt3 sm-mt3r md-mt4 narrow-container white">
       <div class="flex flex-column">
         <p class="h2 serif p1 m0 fw-200">I'm the Emerging Technologies Librarian at the <a href="http://www.hshsl.umaryland.edu">University of Maryland, Baltimore</a>. I run the <a href="http://www.hshsl.umaryland.edu/services/ispace">Innovation Space</a>, and give workshops and talks on topics related to open source tools, creating for the web, and 3D printing.</p>
         <p class="h2 serif p1 m0 fw-200">Prior to Baltimore I worked with the University of Illinois <a href="http://library.illinois.edu/sc">Scholarly Commons</a> and <a href="http://ischool.illinois.edu/">School for Information Sciences</a>, and <a href="http://www.toledogarden.org/toledogrows/">Toledo GROWs</a>.</p>
