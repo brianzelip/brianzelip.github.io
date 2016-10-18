@@ -33,12 +33,14 @@
       @media (min-width: 40em) {
         .sm-align-center { align-items: center; }
         .sm-flex-row { flex-direction: row; }
+        .sm-justify-center { justify-content: center; }
       }
-
 
       .dusty-blue { color: #34495e; }
       .bg-dusty-blue { background-color: #34495e; }
       .h0 { font-size: 3rem; }
+
+      .w-200px { width: 200px; }
       @media (min-width:40em) {
         .sm-py0 {
           padding-top: 0;
@@ -84,8 +86,8 @@
   <body class="bg-dusty-blue px3">
 
     <header class="sm-mt4 md-mt5 narrow-container">
-      <div class="flex flex-column align-center sm-flex-row">
-        <img src="img/bz-livingroom0.jpg" class="circle py2 sm-py0 px1 col-4 sm-200px md-250px">
+      <div class="flex flex-column justify-center align-center sm-flex-row">
+        <img src="img/bz-livingroom0.jpg" class="circle py2 mr2 sm-py0 w-200px md-250px">
         <div class="px1 center sm-left-align">
           <h1 class="m0 h0 lh-1 white">Brian Zelip</h1>
           <p class="m0 p0 white h1 lh-1">web &middot; data &middot; teaching</p>
