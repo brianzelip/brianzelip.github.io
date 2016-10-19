@@ -1,0 +1,27 @@
+{
+  "name": "brianzelip.github.io",
+  "version": "1.0.0",
+  "description": "Personal profile page of Brian Zelip",
+  "main": "index.html",
+  "scripts": {
+    "css": "postcss --use autoprefixer --autoprefixer.browsers \"> 5%\" -o dist.css src.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-brianzelip:brianzelip/brianzelip.github.io"
+  },
+  "keywords": [
+    "\"profile",
+    "page\"",
+    "\"Brian",
+    "Zelip\""
+  ],
+  "author": "Brian Zelip",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "postcss": "^5.2.4",
+    "postcss-cli": "^2.6.0"
+  }
+}
