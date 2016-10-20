@@ -4,8 +4,9 @@
   "description": "Personal profile page of Brian Zelip",
   "main": "index.html",
   "scripts": {
-    "css": "postcss --use autoprefixer --autoprefixer.browsers \"> 5%\" -o dist.css src.css",
-    "dev": "postcss --use autoprefixer --autoprefixer.browsers \"> 5%\" -o dist.css src.css -w",
+    "css": "postcss -u autoprefixer --autoprefixer.browsers \"> 5%\" -u cssnano -o dist.css src.css",
+    "watch_css": "postcss -u autoprefixer --autoprefixer.browsers \"> 5%\" -u cssnano -o dist.css src.css -w",
+    "dev": "postcss -u autoprefixer --autoprefixer.browsers \"> 5%\" -u cssnano -o dist.css src.css -w && http-server .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "autoprefixer": "^6.5.1",
+    "cssnano": "^3.7.7",
     "postcss": "^5.2.4",
     "postcss-cli": "^2.6.0"
   }
