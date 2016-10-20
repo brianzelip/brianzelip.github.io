@@ -83,3 +83,5 @@ a { color: #1DC355; }
 .lh-2 { line-height: 2; }
 .text-decoration-none:hover { text-decoration: none; }
 .fw-200 { font-weight: 200; }
+.hello { color: red; }
+.goodbye { color: white; }
