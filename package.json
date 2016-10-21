@@ -4,10 +4,9 @@
   "description": "Personal profile page of Brian Zelip",
   "main": "index.html",
   "scripts": {
-    "css": "cat src/*.css > css/bundle.css && postcss -u autoprefixer --autoprefixer.browsers '> 5%' -u cssnano -o css/bundle.css css/bundle.css",
-    "watch_css": "cat src/*.css > css/bundle.css && postcss -u autoprefixer --autoprefixer.browsers '> 5%' -u cssnano -o css/bundle.css css/bundle.css -w",
-    "dev": "cat src/*.css > css/bundle.css && postcss -u autoprefixer --autoprefixer.browsers '> 5%' -u cssnano -o css/bundle.css css/bundle.css -w && http-server .",
-    "serve": "http-server . && cat src/*.css > css/zelip.css && postcss -u autoprefixer --autoprefixer.browsers '> 5%' -u cssnano -o css/zelip.min.css css/zelip.css -w",
+    "build_css": "postcss -u postcss-import autoprefixer --autoprefixer.browsers '> 5%' -o css/zelip.css src/index.css",
+    "minify_css": "postcss -u cssnano -o css/zelip.min.css css/zelip.css",
+    "watch_css": "nodemon --watch src/ -e css -x \"npm run build_css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +25,7 @@
     "autoprefixer": "^6.5.1",
     "basscss": "^7.1.1",
     "cssnano": "^3.7.7",
+    "nodemon": "^1.11.0",
     "postcss": "^5.2.4",
     "postcss-cli": "^2.6.0"
   }

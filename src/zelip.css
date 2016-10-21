@@ -35,7 +35,9 @@ body, .h0, h1, h2, h3, h4, h5, h6 {
   margin-left: 1rem;
 }
 .none { display: none; }
+.pt2 { padding-top: 1rem; }
 @media (min-width:40em) {
+  .sm-pt0 { padding-top: 0; }
   .sm-hide { display: none; }
   .sm-block { display: block; }
   .sm-py0 {
@@ -85,3 +87,10 @@ a { color: #1DC355; }
 .fw-200 { font-weight: 200; }
 .hello { color: red; }
 .goodbye { color: white; }
+.fuck { padding: 2rem; }
+.double-fuck { padding: 4rem; }
+.triple-fuck {padding: 6rem; }
+.wtf { color: black; }
+.fuckfuck {color: purple; }
+.shit { color: brown; }
+.real_shit {color: brown; }
