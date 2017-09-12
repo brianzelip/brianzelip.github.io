@@ -6,7 +6,7 @@
   "scripts": {
     "build_css": "postcss -u postcss-import autoprefixer --autoprefixer.browsers '> 5%' -o css/zelip.css src/index.css",
     "minify_css": "postcss -u cssnano -o css/zelip.min.css css/zelip.css",
-    "watch_css": "nodemon --watch src/ -e css -x \"npm run build_css\"",
+    "watch_css": "nodemon --watch src/ -e css -x \"npm run build_css && npm run minify_css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +27,7 @@
     "cssnano": "^3.7.7",
     "nodemon": "^1.11.0",
     "postcss": "^5.2.4",
-    "postcss-cli": "^2.6.0"
+    "postcss-cli": "^2.6.0",
+    "postcss-import": "^8.1.2"
   }
 }
