@@ -7,6 +7,8 @@
     "build_css": "postcss -u postcss-import autoprefixer --autoprefixer.browsers '> 5%' -o css/zelip.css src/index.css",
     "minify_css": "postcss -u cssnano -o css/zelip.min.css css/zelip.css",
     "watch_css": "nodemon --watch src/ -e css -x \"npm run build_css && npm run minify_css\"",
+    "serve": "http-server ./",
+    "start": "npm run serve & npm run watch_css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
