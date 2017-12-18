@@ -167,6 +167,9 @@ a {
 .lh-1 {
   line-height: 1;
 }
+.lh-1p2 {
+  line-height: 1.2;
+}
 .lh-2 {
   line-height: 2;
 }
