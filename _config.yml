@@ -1,0 +1,1 @@
+exclude: [css/zelip.me.css, css/basscss@7.1.1.min.css, node_modules/, package*, README.md, dev_notes.md, CNAME, LICENSE]
