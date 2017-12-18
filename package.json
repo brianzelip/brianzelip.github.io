@@ -4,12 +4,9 @@
   "description": "Personal profile page of Brian Zelip",
   "main": "index.html",
   "scripts": {
-    "build_css": "postcss -u postcss-import autoprefixer --autoprefixer.browsers '> 5%' -o css/zelip.css src/index.css",
-    "minify_css": "postcss -u cssnano -o css/zelip.min.css css/zelip.css",
-    "watch_css": "nodemon --watch src/ -e css -x \"npm run build_css && npm run minify_css\"",
-    "serve": "http-server ./",
-    "start": "npm run serve & npm run watch_css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "jekyll": "jekyll serve .",
+    "css": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -o css/zelip.me.min.css css/zelip.me.css --no-map --watch",
+    "start": "concurrently \"npm run jekyll\" \"npm run css\" --names \"💻,🛠\" --prefix name"
   },
   "repository": {
     "type": "git",
@@ -24,13 +21,15 @@
   "author": "Brian Zelip",
   "license": "GPL-3.0",
   "devDependencies": {
-    "autoprefixer": "^6.5.1",
+    "autoprefixer": "^7.1.6",
     "basscss": "^7.1.1",
-    "cssnano": "^3.7.7",
-    "http-server": "^0.10.0",
-    "nodemon": "^1.11.0",
-    "postcss": "^5.2.4",
-    "postcss-cli": "^2.6.0",
-    "postcss-import": "^8.1.2"
+    "concurrently": "^3.5.0",
+    "cssnano": "^3.10.0",
+    "nodemon": "^1.12.1",
+    "postcss": "^6.0.14",
+    "postcss-cli": "^4.1.1",
+    "postcss-color-function": "^4.0.1",
+    "postcss-custom-properties": "^6.2.0",
+    "postcss-import": "^11.0.0"
   }
 }
