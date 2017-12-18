@@ -359,8 +359,11 @@ h6 {
   .sm-mt3 {
     margin-top: 2rem;
   }
-  .sm-mt3 {
+  .sm-mt3r {
     margin-top: 3rem;
+  }
+  .sm-mt2 {
+    margin-top: 1rem;
   }
   .sm-mr2 {
     margin-right: 1rem;
