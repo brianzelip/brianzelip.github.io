@@ -15,10 +15,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
-    "basscss": "^7.1.1",
-    "concurrently": "^3.5.0",
     "cssnano": "^3.10.0",
-    "nodemon": "^1.12.1",
     "postcss": "^6.0.14",
     "postcss-cli": "^4.1.1",
     "postcss-color-function": "^4.0.1",
