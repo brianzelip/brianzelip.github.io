@@ -5,19 +5,12 @@
   "main": "index.html",
   "scripts": {
     "jekyll": "jekyll serve .",
-    "css": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -o css/zelip.me.min.css css/zelip.me.css --no-map --watch",
-    "start": "concurrently \"npm run jekyll\" \"npm run css\" --names \"💻,🛠\" --prefix name"
+    "css": "postcss -u postcss-custom-properties postcss-color-function postcss-import autoprefixer cssnano -o css/zelip.me.min.css css/zelip.me.css --no-map --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com-brianzelip:brianzelip/brianzelip.github.io"
+    "url": "git@github.com:brianzelip/brianzelip.github.io"
   },
-  "keywords": [
-    "\"profile",
-    "page\"",
-    "\"Brian",
-    "Zelip\""
-  ],
   "author": "Brian Zelip",
   "license": "GPL-3.0",
   "devDependencies": {
