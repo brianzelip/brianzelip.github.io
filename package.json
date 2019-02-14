@@ -17,7 +17,7 @@
     "autoprefixer": "^7.1.6",
     "cssnano": "^3.10.0",
     "postcss": "^6.0.14",
-    "postcss-cli": "^4.1.1",
+    "postcss-cli": "^6.1.1",
     "postcss-color-function": "^4.0.1",
     "postcss-custom-properties": "^6.2.0",
     "postcss-import": "^11.0.0"
