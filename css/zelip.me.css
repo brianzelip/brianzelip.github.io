@@ -1,7 +1,166 @@
 @charset "UTF-8";
 /*! brianzelip.github.io => zelip.me */
 
-@import "basscss@7.1.1.min.css";
+@import 'basscss@7.1.1.min.css';
+
+/* from basscss */
+body {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+svg {
+  max-height: 100%;
+}
+fieldset,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+label {
+  vertical-align: middle;
+}
+input[type='date'],
+input[type='datetime-local'],
+input[type='datetime'],
+input[type='email'],
+input[type='month'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='time'],
+input[type='url'],
+input[type='week'] {
+  height: 2.25rem;
+  padding: 0.5rem;
+  vertical-align: middle;
+  -webkit-appearance: none;
+}
+select {
+  line-height: 1.75;
+  padding: 0.5rem;
+}
+select:not([multiple]) {
+  height: 2.25rem;
+  vertical-align: middle;
+}
+textarea {
+  line-height: 1.75;
+  padding: 0.5rem;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  max-width: 100%;
+  width: 100%;
+}
+th {
+  text-align: left;
+  font-weight: 700;
+}
+td,
+th {
+  padding: 0.25rem 1rem;
+  line-height: inherit;
+}
+th {
+  vertical-align: bottom;
+}
+td {
+  vertical-align: top;
+}
+body {
+  line-height: 1.5;
+  font-size: 100%;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+dl,
+ol,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+code,
+pre,
+samp {
+  font-family: Source Code Pro, Consolas, monospace;
+  font-size: inherit;
+}
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow-x: scroll;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.875rem;
+}
+h6 {
+  font-size: 0.75rem;
+}
+body {
+  color: #111;
+  background-color: #fff;
+}
+a {
+  color: #0074d9;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+code,
+pre {
+  background-color: transparent;
+  border-radius: 3px;
+}
+hr {
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 0, 0, 0.125);
+}
+
+/* /from basscss */
 
 body,
 .h0,
