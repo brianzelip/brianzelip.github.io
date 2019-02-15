@@ -1,7 +1,7 @@
 {
   "name": "brianzelip.github.io",
   "version": "2.0.0",
-  "description": "Personal profile page of Brian Zelip",
+  "description": "Brian Zelip's home page",
   "main": "index.html",
   "scripts": {
     "jekyll": "jekyll serve .",
